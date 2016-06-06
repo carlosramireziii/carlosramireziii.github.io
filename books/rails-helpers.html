@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Level Up: Rails Helpers</title>
+  <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto+Slab|Open+Sans">
+  <style type="text/css">
+    /*
+    <h4>Chapter List</h4>
+  <ol class="list chapter-list">
+    <!-- <li>&#x2713 <del>Introduction</del></li> -->
+    <li>Introduction</li>
+    <li>Front-end Design Patterns</li>
+    <li>Description Lists</li>
+    <li>Carousels</li>
+    <li>Modals</li>
+    <li>Dropdowns</li>
+    <li>Modals Revisited</li>
+    <li>Tabs</li>
+    <li>Domain-specific Helpers</li>
+    <li>Conclusion</li>
+  </ol>
+  */
+
+    /* Defaults */
+    body {
+      color: #444;
+      font-family: "Open Sans", sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h3 { font-family: "Roboto Slab" serif; }
+
+    /*
+      Primary Color (500): #2196F3
+      Secondary Color (50): #E3F2FD
+      Teriary Color (800): #1565C0
+      Accent Color (200): #FF5252
+    */
+
+    section {
+      padding: 15px 15%;
+    }
+
+    section.lead-section {
+      padding: 60px;
+      text-align: center;
+    }
+    section.lead-section h1 {
+      text-transform: capitalize;
+    }
+    section.lead-section h2 {
+      color: rgba(0,0,0,0.55);
+      font-size: 1.3em;
+      padding: 0 20%;
+    }
+
+    ul.list, ol.list {
+      text-align: left;
+    }
+    ul.list li, ol.list li {
+      margin-top: 10px;
+    }
+
+    img.book-cover {
+      display: block;
+      margin: 0 auto;
+      padding: 25px;
+    }
+    img.avatar {
+      border-radius: 50%;
+    }
+
+    strong, em { color: #FF5252; }
+
+    section.info-section h3 {
+      text-align: center;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+    }
+    section.centered {
+      text-align: center;
+    }
+
+    input[type="submit"] {
+      background-color: #FF5252;
+      border: 0 none;
+      color: white;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .bg-primary { background-color: #2196F3; color: white; }
+    .bg-secondary { background-color: #E3F2FD; }
+    .bg-tertiary { background-color: #1565C0; color: white; }
+  </style>
+</head>
+<body>
+
+<section class="lead-section bg-primary">
+  <h1>Learn what 99% of Rails developers don't know</h1>
+  <h2>The majority of developers either ignore or abuse Rails helpers. <br> Be part of the 1% who do it right.</h2>
+</section>
+
+<section class="info-section">
+  <img src="../img/cover.jpg" class="book-cover">
+  <h3>Level-up your skills</h3>
+  <ul class="list">
+    <li>Create <strong>reusable and composable helpers</strong> as impressive as Rails' own <code>FormBuilder</code></li>
+    <li>Use <strong>object-oriented techniques</strong> to better organize and maintain your helpers</li>
+    <li>Construct a <strong>library of components</strong> for the Twitter Bootstrap framework</li>
+    <li>Learn to distinguish and <strong>properly use front-end patterns</strong> such as decorators, helpers, presenters, and partials</li>
+    <li><strong>Improve your Ruby skills</strong> by using blocks, objects, <code>yield</code>, and other advanced patterns</li>
+  </ul>
+</section>
+
+<section class="info-section bg-secondary">
+  <h3>Go beyond the book</h3>
+
+  <p>Using the popular Twitter Bootstrap framework, this book will guide you through 5 of the most common components (description lists, carousels, modals, dropdowns, & tabs), creating robust helper functions and advancing our Ruby/Rails skills along the way.</p>
+  <p>The resulting code becomes your very own library to use in future projects!</p>
+  <p>In addition to walking through the code, each chapter includes a "Futher Learning" section to help you go beyond the content of the book.</p>
+  <p>You'll also receive access to an exclusive community of learners such as yourself. We'll discuss the "Further Learning" sections, look at code from your own applications, and hone our developer skills together.</p>
+</section>
+
+<section class="info-section centered">
+  <h3>Subscribe for early access</h3>
+  <p>The book is currently being drafted with <em>3 out of 10 chapters complete!</em></p>
+  <p>Sign up below to receive early access and to be notified when the book is available</p>
+  <form action="https://hooks.zapier.com/hooks/catch/798156/ulj9n9/" method="post">
+    <input type="text" name="email">
+    <input type="submit" name="" value="Subscribe">
+  </form>
+  <p><small>Don't worry, you won't receive any spam from me.</small></p>
+</section>
+
+<section class="info-section bg-tertiary centered">
+  <h3>About the author</h3>
+  <a href="http://www.carlosramireziii.com"><img src="https://www.gravatar.com/avatar/2f8e98f29daa5c09c5fd1c2a09f72750" class="avatar"></a>
+  <p>My name is Carlos and I have spent the last 6 years building web applications using Ruby/Rails.</p>
+  <p>I also <a href="https://www.codementor.io/carlosramireziii" target="_blank">mentor</a> other programmers.</p>
+</section>
+
+</body>
+</html>
