@@ -27,6 +27,7 @@ github_username: carlosramireziii
 # Build settings
 markdown: kramdown
 theme: minima
+permalink: none
 
 # Custom settings
 segment_api_key: HovqibZYJPv9ZOev8ENoUNDDvjh2ZVpK
