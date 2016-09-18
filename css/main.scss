@@ -8,9 +8,10 @@ $base-font-family: "Open Sans", sans-serif;
 $base-font-size:   1.125rem;
 $base-line-height: 1.6;
 
-$text-color:       #444;
-$primary-color:    #1565C0;
-$accent-color:     #FF5252;
+$text-color:          #444;
+$primary-color:       #1565C0;
+$primary-color-light: #E3F2FD;
+$accent-color:        #FF5252;
 
 // Base styling
 
@@ -23,6 +24,14 @@ body {
 }
 
 a { color: $accent-color; }
+
+input[type="submit"] {
+  background-color: $accent-color;
+  border: 0 none;
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+}
 
 // Layout styling
 
@@ -39,4 +48,18 @@ a { color: $accent-color; }
 
 .post-content {
   padding: 15px 15%;
+}
+
+.page-cta {
+  background-color: $primary-color-light;
+  padding: 15px 15%;
+
+  form { text-align: center; }
+}
+
+// Modules
+
+.signature {
+  font-family: "Handlee", serif;
+  font-size: 1.8rem;
 }
