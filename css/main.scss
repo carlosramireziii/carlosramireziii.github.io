@@ -11,6 +11,7 @@ $base-line-height: 1.6;
 $text-color:          #444;
 $primary-color:       #1565C0;
 $primary-color-light: #E3F2FD;
+$primary-color-dark:  #0D47A1;
 $accent-color:        #FF5252;
 
 // Base styling
@@ -34,6 +35,16 @@ input[type="submit"] {
 }
 
 // Layout styling
+
+.site-header {
+  padding: 15px;
+}
+
+.site-title {
+  color: $text-color;
+  text-decoration: none;
+  font-size: 1.25rem;
+}
 
 .post-header {
   background-color: $primary-color;

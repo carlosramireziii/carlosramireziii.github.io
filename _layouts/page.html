@@ -13,4 +13,6 @@ layout: default
 
 </article>
 
-{% include page_cta.html %}
+{% if page.include_cta %}
+  {% include page_cta.html %}
+{% endif %}
