@@ -9,10 +9,12 @@ $base-font-size:   1.125rem;
 $base-line-height: 1.6;
 
 $text-color:          #444;
+$secondary-text-color: rgba($text-color, 0.7);
 $primary-color:       #1565C0;
 $primary-color-light: #E3F2FD;
 $primary-color-dark:  #0D47A1;
 $accent-color:        #FF5252;
+$divider-color:       rgba(0, 0, 0, 0.12);
 
 // Base styling
 
@@ -36,14 +38,11 @@ input[type="submit"] {
 
 // Layout styling
 
-.site-header {
-  padding: 15px;
-}
-
-.site-title {
-  color: $text-color;
-  text-decoration: none;
-  font-size: 1.25rem;
+.site-footer {
+  border-top: 1px $divider-color solid;
+  color: $secondary-text-color;
+  padding: 15px 15% 30px 15%;
+  text-align: right;
 }
 
 .post-header {
