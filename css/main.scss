@@ -1,0 +1,75 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+// Our variables
+$base-font-family: "Open Sans", sans-serif;
+$base-font-size:   1.125rem;
+$base-line-height: 1.6;
+
+$text-color:          #444;
+$secondary-text-color: rgba($text-color, 0.7);
+$primary-color:       #1565C0;
+$primary-color-light: #E3F2FD;
+$primary-color-dark:  #0D47A1;
+$accent-color:        #FF5252;
+$divider-color:       rgba(0, 0, 0, 0.12);
+
+// Base styling
+
+body {
+  color: $text-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: antialiased;
+}
+
+a { color: $accent-color; }
+
+input[type="submit"] {
+  background-color: $accent-color;
+  border: 0 none;
+  color: white;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+// Layout styling
+
+.site-footer {
+  border-top: 1px $divider-color solid;
+  color: $secondary-text-color;
+  padding: 15px 15% 30px 15%;
+  text-align: right;
+}
+
+.post-header {
+  background-color: $primary-color;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.post-title {
+  padding: 0 15%;
+}
+
+.post-content {
+  padding: 15px 15%;
+}
+
+.page-cta {
+  background-color: $primary-color-light;
+  padding: 15px 15%;
+
+  form { text-align: center; }
+}
+
+// Modules
+
+.signature {
+  font-family: "Handlee", serif;
+  font-size: 1.8rem;
+}
