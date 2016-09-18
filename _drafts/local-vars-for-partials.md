@@ -27,8 +27,8 @@ Lastly, maybe you are just following the Rails scaffold generator
 convention, which uses instance variables in its `_form.html.erb`
 partial.
 
-Despite all of that, I'm still going to tell you to always prefer
-local variables for a partial over instance variables.
+Despite all of that, follow this rule: **always prefer
+local variables for a partial over instance variables**.
 
 Here's why...
 
@@ -97,7 +97,8 @@ If an instance variable is used within a partial then we have no idea
 where it came from. A local variable, on the other hand, can be traced
 back to the `render` call which used the partial.
 
-***
+## Conclusion: say no to instance variables
 
-Just say no to instance variables in your partials with confidence, and
-happily enjoy all the benefits of using local variables instead.
+Go forward with confidence choosing local variables over instance
+variables in your partials, and happily enjoy all the benefits described
+above!
