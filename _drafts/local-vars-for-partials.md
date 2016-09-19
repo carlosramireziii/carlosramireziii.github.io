@@ -3,20 +3,20 @@ layout: post
 title: "Stop using instance variables inside your partials"
 ---
 
-Sadly it's common to see Rails developers using instance variables
+Sadly, it's common to see Rails developers using instance variables
 within their partials rather than explicitly passing the data through
 local variables.
 
 <!-- more -->
 
-At some point you may have asked yourself the question "should I bother
+At some point you may have asked yourself the question, "should I bother
 setting locals for this partial or can I just use the instance
 variable that's already defined?"
 
 It's tempting to take the instance variable route. For one thing, it's
 more work to set local data for the partial when an instance
 variable just works and is already defined for you by the controller.
-Worse, if you are rendering partials within other partisl, then you need
+Worse, if you are rendering partials within other partials, then you need
 to pass the local data each time.
 
 Redefining the data can seem weird and not DRY, especially
@@ -102,3 +102,5 @@ back to the `render` call which used the partial.
 Go forward with confidence choosing local variables over instance
 variables in your partials, and happily enjoy all the benefits described
 above!
+
+*[DRY]: Don't Repeat Yourself

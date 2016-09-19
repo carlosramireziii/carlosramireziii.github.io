@@ -60,11 +60,15 @@ input[type="submit"] {
   padding: 15px 15%;
 }
 
-.page-cta {
+.page-cta, .post-cta {
   background-color: $primary-color-light;
   padding: 15px 15%;
 
   form { text-align: center; }
+}
+
+.post-cta {
+  text-align: center;
 }
 
 // Modules
