@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Stop using instance variables inside your partials"
+title: "Stop Using Instance Variables Inside Your Partials"
 ---
 
 Sadly, it's common to see Rails developers using instance variables
