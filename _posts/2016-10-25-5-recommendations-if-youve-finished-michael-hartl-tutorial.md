@@ -35,7 +35,7 @@ these features (e.g. endless pagination) to your demo app.
 
 ## 3. Build Your Own App
 
-Echoing the advice of [Goshi Arinich](http://goshakkk.name/finished-hartl-tutorial-whats-next/){:target="_blank"},
+Echoing the advice of [Gosha Arinich](http://goshakkk.name/finished-hartl-tutorial-whats-next/){:target="_blank"},
 nothing will prepare you for future client or full-time work like
 building your own app from scratch.
 
