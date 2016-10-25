@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Handlee|Open+Sans">
 
-  {% if jekyll.environment == 'production' %}
-  {% include analytics.html %}
-  {% endif %}
+  {% assign analytics_config_key = jekyll.environment | append: "_analytics_key" %}
+  {% assign analytics_key = site[analytics_config_key] %}
+  {% include analytics.html key=analytics_key %}
 </head>

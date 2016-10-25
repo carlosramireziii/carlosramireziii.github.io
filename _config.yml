@@ -31,5 +31,6 @@ markdown: kramdown
 theme: minima
 permalink: none
 
-# Custom settings
-segment_api_key: HovqibZYJPv9ZOev8ENoUNDDvjh2ZVpK
+# Environment-specific variables
+# NOTE: override these in a custom config file and serve using --config flag
+production_analytics_key: HovqibZYJPv9ZOev8ENoUNDDvjh2ZVpK
