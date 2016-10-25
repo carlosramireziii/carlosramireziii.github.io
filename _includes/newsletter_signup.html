@@ -1,0 +1,13 @@
+{% assign newsletter_config_key = jekyll.environment | append: "_newsletter_key" %}
+{% assign newsletter_key = site[newsletter_config_key] %}
+
+<form action="//carlosramireziii.us13.list-manage.com/subscribe/post?u=fd5cccfb8d1f53505e22eb917&amp;id={{ newsletter_key }}" method="post">
+  <input type="text" name="EMAIL">
+
+  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fd5cccfb8d1f53505e22eb917_{{ newsletter_key }}" tabindex="-1" value=""></div>
+
+  <input type="submit" value="Subscribe" name="subscribe">
+  <br>
+  <small>Only valuable content, no spam from me</small>
+</form>
