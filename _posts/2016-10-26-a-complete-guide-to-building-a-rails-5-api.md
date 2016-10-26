@@ -9,17 +9,17 @@ an API using Rails and its new API-only mode?**
 If so, I recommend checking out Kam Low's [_Building the Perfect Rails 5 API Only
 App_](http://sourcey.com/building-the-prefect-rails-5-api-only-app/){:target="_blank"}
 
-Unlike other tutorials (which can be either too basic or incomplete), this one outlines every step, from generating
+Unlike other tutorials, which can either be too basic or incomplete, this one outlines every step-- from generating
 the initial Rails project all the way to adding authentication and
-securing the API from malicious attacks. It's straight-forward to follow
+securing the API from malicious attacks. It's also straightforward to follow
 along, much like the Michael Hartl Tutorial for learning Rails.
 
-The topics covered include
+The topics covered are:
 
 * Project setup
 * Testing with RSpec
-* JSON serialization using ActiveModelSerializers
-* Enabling cross domain requests using CORS <== _this one is huge_
+* JSON serialization using `ActiveModelSerializers`
+* Enabling cross domain requests using CORS _<== this one is huge_
 * Versioning the API
 * Rate limiting, throttling, and other security measures
 * Authentication using tokens
