@@ -7,7 +7,7 @@ title: A Complete Guide to Building a Rails 5 API
 an API using Rails and its new API-only mode?**
 
 If so, I recommend checking out Kam Low's [_Building the Perfect Rails 5 API Only
-App_](http://sourcey.com/building-the-prefect-rails-5-api-only-app).
+App_](http://sourcey.com/building-the-prefect-rails-5-api-only-app/){:target="_blank"}
 
 Unlike other tutorials (which can be either too basic or incomplete), this one outlines every step, from generating
 the initial Rails project all the way to adding authentication and
