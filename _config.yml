@@ -25,6 +25,8 @@ twitter_username: cramireziii
 github_username: carlosramireziii
 github:
   url: "" # Required in order for GitHub pages paths to resolve locally and in production
+disqus:
+  shortname: carlosramireziii
 
 # Build settings
 markdown: kramdown
