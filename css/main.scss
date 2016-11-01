@@ -64,7 +64,10 @@ input[type="submit"] {
   background-color: $primary-color-light;
   padding: 15px 15%;
 
-  form { text-align: center; }
+  form {
+    margin-bottom: 1.25em;
+    text-align: center;
+  }
 }
 
 .post-cta {
