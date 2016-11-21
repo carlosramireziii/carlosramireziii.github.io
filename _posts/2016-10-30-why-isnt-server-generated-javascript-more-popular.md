@@ -67,5 +67,7 @@ So have no more doubts... use SJR with confidence!
 
 ### Related Articles
 
+- [3 Reasons Why Your SJR Template Isn't Working]({% link
+  _posts/2016-11-20-3-reasons-why-your-sjr-template-isnt-working.md %})
 - [When To Use `escape_javascript` in an SJR Template]({% link
   _posts/2016-10-04-when-to-use-escape-javascript-in-an-sjr-template.md %})
