@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 5 Recommendations If You've Finished the Michael Hartl Rails Tutorial
+tags: michael-hartl
 ---
 
 If you're a Rails newbie then there's a good chance you came to Rails

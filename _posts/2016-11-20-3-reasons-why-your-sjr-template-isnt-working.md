@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 3 Reasons Why Your SJR Template Isn't Working
+tags: sjr
 ---
 
 When you are dealing with an SJR template that just isn't working it can be the most frustrating thing in the world.
@@ -86,12 +87,5 @@ This will help you identify if your ERB calls are the culprit.
 
 Because of their unexpected behavior and lack of error messages, broken SJR templates can be one of the hardest things to debug in Rails.
 But being able to distinguish between **runtime errors in Ruby or JavaScript** or **syntax errors in JavaScript** will make debugging SJR templates a breeze!
-
-### Related Articles
-
-- [Why Isn't Server-Generated JavaScript More Popular?]({% link
-  _posts/2016-10-04-when-to-use-escape-javascript-in-an-sjr-template.md %})
-- [When To Use `escape_javascript` in an SJR Template]({% link
-  _posts/2016-10-04-when-to-use-escape-javascript-in-an-sjr-template.md %})
 
 *[SJR]: Server-Generated JavaScript

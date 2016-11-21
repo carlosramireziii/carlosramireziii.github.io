@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Complete Guide to Building a Rails 5 API
+tags: api, rails-5
 ---
 
 **Have you been looking for a thorough, easy to follow guide to building

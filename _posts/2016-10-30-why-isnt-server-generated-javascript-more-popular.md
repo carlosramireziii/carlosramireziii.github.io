@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Why Isn't Server-Generated JavaScript More Popular?
+tags: sjr
 ---
 
 Do you remember discovering how easy it was to reuse a partial from
@@ -64,10 +65,3 @@ are many use cases for which its even more preferable than a full-blown
 client-side MVC framework.
 
 So have no more doubts... use SJR with confidence!
-
-### Related Articles
-
-- [3 Reasons Why Your SJR Template Isn't Working]({% link
-  _posts/2016-11-20-3-reasons-why-your-sjr-template-isnt-working.md %})
-- [When To Use `escape_javascript` in an SJR Template]({% link
-  _posts/2016-10-04-when-to-use-escape-javascript-in-an-sjr-template.md %})
