@@ -9,12 +9,14 @@ You spend days trying to figure out the problem, and no solutions are working.
 Worst of all, there are usually no error messages to guide your debugging or make sense of the behavior you are seeing. 
 Sometimes you get to the point where it just isn't worth it anymore, and you have to give up and move on. 
 
+<!-- more -->
+
 Luckily most issues in an SJR template fall into one of three categories. 
 Once you learn to identify the *type* of error you are dealing with, debugging becomes much simpler.
 
 Learn about each one below never feel helpless when encountering a broken SJR template ever again! 
 
-## 1. Errors in your Ruby code
+## Errors in your Ruby code
 
 **Ruby Runtime Errors** are ones that you are already familiar with from your other Ruby code and are the easiest to spot and debug.
 
@@ -33,7 +35,7 @@ You can even inspect the body of the response in the XHRs section and will show 
 ![Rails SJR Ruby Runtime Error - Response Body](/assets/rails_sjr_ruby_runtime_error_2.png)
 *Response body showing Ruby error*
 
-## 2. Errors in your JavaScript code
+## Errors in your JavaScript code
 
 Just like Ruby runtime errors, you can also have **JavaScript runtime errors** in your SJR templates. 
 Unlike their Ruby counterparts, however, these are much harder to spot because they do not result in server errors or console alerts by default.
@@ -56,7 +58,7 @@ Now instead of just failing silently, the browser debugging tools will show help
 ![Rails SJR JavaScript Runtime Error - Try-Catch in Console](/assets/rails_sjr_javascript_runtime_error.png)
 *JavaScript exception error message in browser debugging console*
 
-## 3. Malformed JavaScript code
+## Malformed JavaScript code
 
 **JavaScript syntax errors** occur when your code is not compiled correctly. 
 These are the hardest to spot because not only do they fail silently by default, but wrapping them in a try-catch block like above won't work because the code itself is invalid and therefore won't even be executed.  
@@ -80,7 +82,7 @@ If you've eliminated runtime errors as the cause of your broken SJR template, se
   ```
 This will help you identify if your ERB calls are the culprit. 
 
----
+## No more aimless debugging
 
 Because of their unexpected behavior and lack of error messages, broken SJR templates can be one of the hardest things to debug in Rails.
 But being able to distinguish between **runtime errors in Ruby or JavaScript** or **syntax errors in JavaScript** will make debugging SJR templates a breeze!
@@ -91,3 +93,5 @@ But being able to distinguish between **runtime errors in Ruby or JavaScript** o
   _posts/2016-10-04-when-to-use-escape-javascript-in-an-sjr-template.md %})
 - [When To Use `escape_javascript` in an SJR Template]({% link
   _posts/2016-10-04-when-to-use-escape-javascript-in-an-sjr-template.md %})
+
+*[SJR]: Server-Generated JavaScript

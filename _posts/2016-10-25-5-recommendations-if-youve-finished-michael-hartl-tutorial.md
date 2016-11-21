@@ -74,7 +74,7 @@ dedicated to finding you a position after you graduate.
 Your experience completing the tutorial puts you in a good position to
 get the most out of a program like this.
 
-***
+## Keep the learning going strong
 
 Michael Hartl's _Ruby on Rails Tutorial_ is a rite of passage for many
 Rails newbies, but finishing it can leave you uncertain about what to do next.
