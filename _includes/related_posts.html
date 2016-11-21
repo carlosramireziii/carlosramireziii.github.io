@@ -1,7 +1,17 @@
-{% if site.related_posts.size >= 1 %}
+{% assign related_posts = "" | split: "" %}
+
+{% for tag in page.tags %}
+  {% for post in site.tags[tag] %}
+    {% if post.title != page.title %}
+      {% assign related_posts = related_posts | push: post %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
+
+{% if related_posts.size >= 1 %}
   <h3 id="related-articles">Related Articles</h3>
   <ul>
-    {% for related_post in site.related_posts limit: 5 %}
+    {% for related_post in related_posts limit: 5 %}
       <li><a href="{{ related_post.url }}">{{ related_post.title }}</a></li>
     {% endfor %}
   </ul>

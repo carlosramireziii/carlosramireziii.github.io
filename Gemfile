@@ -22,5 +22,4 @@ gem "github-pages", "104", group: :jekyll_plugins
 group :jekyll_plugins do
   # gem "jekyll-github-metadata", "~> 1.0"
   gem "jekyll-compose", "~> 0.4.1"
-  gem "jekyll-tagging-related_posts", "~> 0.2.1"
 end
