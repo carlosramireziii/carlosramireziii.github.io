@@ -16,11 +16,10 @@ gem "minima"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
-gem "github-pages", github: "github/pages-gem", branch: "jekyll-v3-3-0", group: :jekyll_plugins
+gem "github-pages", "104", group: :jekyll_plugins
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   # gem "jekyll-github-metadata", "~> 1.0"
   gem "jekyll-compose", "~> 0.4.1"
-  gem "jekyll-tagging-related_posts", "~> 0.2.1"
 end
