@@ -93,9 +93,18 @@ $("#comments").html("<%= j render(@comments) %>");
 $("#comments").html("<%= escape_javascript render(@comments) %>");
 ```
 
-## Conclusion
+## Now you know
 
 SJR templates are a great tool to have in your Rails arsenal, and by
 learning how and when to use `escape_javascript` (or `j`) within those
 templates, you will save yourself hours of headaches debugging an
 unresponsive template.
+
+### Related Articles
+
+- [3 Reasons Why Your SJR Template Isn't Working]({% link
+  _posts/2016-11-20-3-reasons-why-your-sjr-template-isnt-working.md %})
+- [Why Isn't Server-Generated JavaScript More Popular?]({% link
+  _posts/2016-10-04-when-to-use-escape-javascript-in-an-sjr-template.md %})
+
+*[SJR]: Server-Generated JavaScript

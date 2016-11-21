@@ -58,6 +58,20 @@ input[type="submit"] {
 
 .post-content {
   padding: 15px 15%;
+
+  img {
+    //margin: 0 auto; // center block element
+
+    // Responsive images
+    display: block;
+    height: auto; 
+    max-width: 100%; 
+  }
+
+  // Image caption
+  img + em { 
+    font-size: smaller;
+  }
 }
 
 .page-cta, .post-cta {
