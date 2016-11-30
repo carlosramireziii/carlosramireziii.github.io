@@ -4,7 +4,7 @@ title: "A Step-By-Step Guide to Debugging SJR Templates"
 tags: sjr
 ---
 
-In my [previous article](), we went over the different types of errors you'll commonly encounter in an SJR template.
+In my [previous article][sjr_errors_post], we went over the different types of errors you'll commonly encounter in an SJR template.
 But even armed with that knowledge, you may still find yourself at a loss for how to debug a template that isn't working.
 Sometimes you've run out of ideas and just need to know what to do next. 
 
@@ -12,6 +12,8 @@ For times like those, I find it helpful to have a systematic debugging plan.
 Having a step-by-step debugging process keeps you from just taking shots in the dark, hoping to get lucky and find the issue by chance.
 
 Here are the steps that I take whenever I encounter a buggy SJR template. 
+
+<!-- more -->
 
 ## The process in action
 
@@ -82,7 +84,7 @@ but it will allow us to proceed with confidence that the JavaScript will be well
 
 ### Step 3: Identify errors using try-catch
 
-As I mentioned when discussing the [different types of SJR template errors](), a good way to spot *JavaScript runtime errors*  is to wrap your template in a try-catch statement and log the error message of any exception which is caught.
+As I mentioned when discussing the [different types of SJR template errors][sjr_errors_post], a good way to spot *JavaScript runtime errors*  is to wrap your template in a try-catch statement and log the error message of any exception which is caught.
 
 ```
 try {
@@ -126,7 +128,7 @@ This is the *Ruby runtime error* resulting from the undefined instance variable 
 
 We can fix by either (1) defining `@post` in the `CommentsController#create` action which renders this SJR template OR (2) replace the instance variable with a local variable. 
 
-My recommendation is to [stop using instance variables in your partials]().
+My recommendation is to [stop using instance variables in your partials][instance_var_in_partials_post].
 
 ### Step 5: Look for missing `escape_javascript` calls
 
@@ -161,3 +163,6 @@ The following outline can serve as your new step-by-step process to use whenever
 1. Make sure every ERB render call is escaped properly
 
 To download a PDF cheatsheet to use as a reference, just [drop me your email below]().
+
+[sjr_errors_post]: {{ site.baseurl }}{% post_url 2016-11-20-3-reasons-why-your-sjr-template-isnt-working %}
+[instance_var_in_partials_post]: {{ site.baseurl }}{% post_url 2016-09-19-stop-using-instance-variables-in-partials %}
