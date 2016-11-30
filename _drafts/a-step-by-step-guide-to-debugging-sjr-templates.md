@@ -2,6 +2,7 @@
 layout: post
 title: "A Step-By-Step Guide to Debugging SJR Templates"
 tags: sjr
+related_posts: false
 ---
 
 In my [previous article][sjr_errors_post], we went over the different types of errors you'll commonly encounter in an SJR template.
