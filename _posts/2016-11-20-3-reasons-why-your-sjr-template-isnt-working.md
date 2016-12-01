@@ -48,11 +48,13 @@ Everything will look like it worked, except your template's JavaScript will not 
 When you think you are dealing with this kind of error, a useful trick to get more info is to **wrap your JavaScript code in a try-catch block**. 
 This allows you to catch exceptions thrown by the JS code and print the error message into the console.
 
-    try { 
-      // SJR template code goes here 
-    } catch(e) { 
-      console.error(e); 
-    }
+{% highlight js %}
+try { 
+  // template code goes here 
+} catch(e) { 
+  console.error(e); 
+}
+{% endhighlight %}
 
 Now instead of just failing silently, the browser debugging tools will show helpful error messages and stacktraces just like our Ruby runtime errors!
 
@@ -74,13 +76,13 @@ If you've eliminated runtime errors as the cause of your broken SJR template, se
 
 * **Replace embedded Ruby with static strings**.
   
-  ```
+  {% highlight js %}
   // original using ERB
   $("#foo").html("<%= ... %>");
 
   // replace with...
   $("#foo").html("Debugging test");
-  ```
+  {% endhighlight %}
 This will help you identify if your ERB calls are the culprit. 
 
 ## No more aimless debugging

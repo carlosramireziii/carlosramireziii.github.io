@@ -37,7 +37,7 @@ Here's why...
 
 Take the following `users/_mailing_address.html.erb` partial
 
-{% highlight ruby %}
+{% highlight erb %}
 <address>
   <strong><%= @user.full_name %></strong><br>
   <%= @user.address %><br>
@@ -55,13 +55,13 @@ users?
 
 Local variables make all of these scenarios easy.
 
-```
+{% highlight erb %}
 <%= render "users/mailing_address", user: current_user %>
 
 <%= render "users/mailing_address", user: article.user %>
 
 <%= render "users/mailing_address", collection: users %>
-```
+{% endhighlight %}
 
 Reusing a partial anywhere in your app becomes as simple as calling
 `render` and passing it the data it needs. No controllers, no instance
@@ -98,7 +98,7 @@ If an instance variable is used within a partial then we have no idea
 where it came from. A local variable, on the other hand, can be traced
 back to the `render` call which used the partial.
 
-## Conclusion: say no to instance variables
+## In summary, say _no_ to instance variables
 
 Go forward with confidence choosing local variables over instance
 variables in your partials, and happily enjoy all the benefits described
