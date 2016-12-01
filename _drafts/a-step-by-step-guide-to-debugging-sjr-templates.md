@@ -34,7 +34,7 @@ To illustrate the strategy, let's follow along with a simple SJR template exampl
 $("ul#comments").appendOnto("<%= render(@comment) %>");
 ```
 
-Believe it or not, this short example contains 3 of the most common errors responsible for SJR woes.
+Believe it or not, this small example contains 3 errors commonly responsible for most SJR issues:
 
 1. Because `appendOnto` is not a valid jQuery function, a **JavaScript runtime error** will occur
 1. Rendering the comment partial without defining the `@post` variable in the `CommentsController#create` action results in a **Ruby runtime error**
@@ -46,7 +46,7 @@ You'll see how having a process for debugging can help uncover each of these err
 
 When your JavaScript isn't executing, it's tempting to jump right into the template and start looking for an error there.
 But sometimes the issue lies before the template is even rendered, somewhere in the Rails stack. 
-For this reason, I always start by testing that the SJR template is being rendered in the first place.
+For this reason, I always start by confirming that the SJR template is definitely being rendered in the first place.
 
 The simplest way to do this is by replacing the entire contents of the template with an `alert`. 
 
@@ -107,7 +107,7 @@ Once that's done, we'll see the string "Hello world!" get appended to the `ul` w
 
 ### Step 4: Reintroduce ERB `render` calls
 
-Now that we know the JS is working, we can put back in our original ERB render calls.
+Now that we know the JS is working, we can put our original ERB `render` calls back in.
 
 ```
 try {
@@ -117,11 +117,11 @@ try {
 }
 ```
 
-The template will now fail, however we now know that it's due to a server error in Ruby.
+The template will fail, however we now know that it's due to a server error in Ruby.
 This is the *Ruby runtime error* resulting from the undefined instance variable in the comment partial.
 
 ```
-// the partial fails if @post is not defined!
+// this partial fails if @post is not defined!
 <li>
   <%= comment.content %>
   replied to <%= @post.title %>
@@ -137,7 +137,7 @@ My recommendation is to [stop using instance variables in your partials][instanc
 At this point we've caught any Ruby and/or JavaScript runtime errors. 
 The only error left preventing this template from executing properly is a *JavaScript syntax error* caused by malformed JS.
 
-The way to debug these is to check each ERB `render` call to ensure that a call to `escape_javascript` (or `j` is present.
+The way to debug this is to check each ERB `render` call to ensure that it is preceded by `escape_javascript` or `j`.
 
 In our example template, we'll notice that the rendered HTML was *not* escaped properly, and we'll need to add that in. 
 
@@ -151,7 +151,7 @@ $("ul#comments").append("<%= render(@comment) %>");
 $("ul#comments").append("<%= escape_javascript render(@comment) %>");
 ```
 
-With this fix in place, the template finally enders and runs properly in the browser.
+With this fix in place, the template finally renders and runs properly in the browser.
 Debugging success!
 
 ## Review the steps (and download the cheatsheet)
