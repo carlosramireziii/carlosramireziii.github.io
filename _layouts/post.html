@@ -15,7 +15,11 @@ layout: default
     {% endif %}
   </div>
 
-  {% include post_cta.html %}
+  {% if page.custom_cta %}
+    {% include {{page.custom_cta}} %}
+  {% else %}
+    {% include post_cta.html %}
+  {% endif %}
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
