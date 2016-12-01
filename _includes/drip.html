@@ -1,0 +1,18 @@
+{% assign drip_config_key = jekyll.environment | append: "_drip_key" %}
+{% assign drip_key = site[drip_config_key] %}
+
+{% if drip_key %}
+  <script type="text/javascript">
+  var _dcq = _dcq || [];
+  var _dcs = _dcs || {}; 
+  _dcs.account = '{{ drip_key }}';
+
+  (function() {
+    var dc = document.createElement('script');
+    dc.type = 'text/javascript'; dc.async = true; 
+    dc.src = '//tag.getdrip.com/{{ drip_key }}.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(dc, s);
+  })();
+  </script>
+{% endif %}
