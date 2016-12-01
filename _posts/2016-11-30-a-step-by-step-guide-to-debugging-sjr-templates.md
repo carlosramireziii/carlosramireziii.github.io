@@ -21,18 +21,18 @@ Here are the steps that I take whenever I encounter a buggy SJR template.
 
 To illustrate the strategy, let's follow along with a simple SJR template example.
 
-```
-// _comment.html.erb
+{% highlight erb %}
+<!-- _comment.html.erb -->
 <li>
   <%= comment.content %>
   replied to <%= @post.title %>
 </li>
-```
+{% endhighlight %}
 
-```
+{% highlight js %}
 // create.js.erb
 $("ul#comments").appendOnto("<%= render(@comment) %>");
-```
+{% endhighlight %}
 
 Believe it or not, this small example contains 3 errors commonly responsible for most SJR issues:
 
@@ -50,10 +50,10 @@ For this reason, I always start by confirming that the SJR template is definitel
 
 The simplest way to do this is by replacing the entire contents of the template with an `alert`. 
 
-```
+{% highlight js %}
 // create.js.erb
 alert("Hello world!");
-```
+{% endhighlight %}
 
 If the `alert` displays properly, then you know that your template is being rendered. 
 If the `alert` *does not* show up, that means that your template is never being rendered and that you have a problem in your controller or business layer. 
@@ -71,15 +71,13 @@ The most common issue with SJR templates is malformed JavaScript code resulting 
 What makes this so troublesome is that it prevents any code from being executed (including `alert`s, log messages, etc.).
 I like to rule out those kinds of errors by replacing all ERB `render` calls with static strings instead.
 
-```
+{% highlight js %}
 $("ul#comments").appendOnto("<%= render(@comment) %>");
-```
 
-*becomes...*
+// becomes...
 
-```
 $("ul#comments").appendOnto("Hello world!");
-```
+{% endhighlight %}
 
 This step alone won't reveal any of the errors in our template yet, 
 but it will allow us to proceed with confidence that the JavaScript will be well-formed and executed properly. 
@@ -88,13 +86,13 @@ but it will allow us to proceed with confidence that the JavaScript will be well
 
 As I mentioned when discussing the [different types of SJR template errors][sjr_errors_post], a good way to spot *JavaScript runtime errors*  is to wrap your template in a try-catch statement and log the error message of any exception which is caught.
 
-```
+{% highlight js %}
 try {
   $("ul#comments").appendOnto("Hello world!");
 } catch (e) {
   console.error(e);
 }
-```
+{% endhighlight %}
 
 With this in place, we can spot our first error in the example template. 
 
@@ -109,24 +107,24 @@ Once that's done, we'll see the string "Hello world!" get appended to the `ul` w
 
 Now that we know the JS is working, we can put our original ERB `render` calls back in.
 
-```
+{% highlight js %}
 try {
   $("ul#comments").append("<%= render(@comment) %>");
 } catch (e) {
   console.error(e);
 }
-```
+{% endhighlight %}
 
 The template will fail, however we now know that it's due to a server error in Ruby.
 This is the *Ruby runtime error* resulting from the undefined instance variable in the comment partial.
 
-```
-// this partial fails if @post is not defined!
+{% highlight erb %}
+<!-- this partial fails if @post is not defined! -->
 <li>
   <%= comment.content %>
   replied to <%= @post.title %>
 </li>
-```
+{% endhighlight %}
 
 We can fix by either (1) defining `@post` in the `CommentsController#create` action which renders this SJR template OR (2) replace the instance variable with a local variable. 
 
@@ -141,15 +139,13 @@ The way to debug this is to check each ERB `render` call to ensure that it is pr
 
 In our example template, we'll notice that the rendered HTML was *not* escaped properly, and we'll need to add that in. 
 
-```
+{% highlight js %}
 $("ul#comments").append("<%= render(@comment) %>");
-```
 
-*becomes...*
+// becomes...
 
-```
 $("ul#comments").append("<%= escape_javascript render(@comment) %>");
-```
+{% endhighlight %}
 
 With this fix in place, the template finally renders and runs properly in the browser.
 Debugging success!

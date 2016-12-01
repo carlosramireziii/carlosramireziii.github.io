@@ -17,9 +17,9 @@ content to the DOM.
 
 ## Does this sound familiar?
 
-```
+{% highlight js %}
 $("#posts-list").html("<%= render(@posts) %>");
-```
+{% endhighlight %}
 
 Have you ever written a `create.js.erb` SJR template like the one above
 and found that when you tested it in your app nothing happened? If so,
@@ -58,7 +58,7 @@ and insert it into the DOM you'll want to escape it first.
 
 Some common examples include
 
-```
+{% highlight js %}
 // rendering a collection of records as a partial
 $("#comments").html("<%= escape_javascript render(@comments) %>");
 
@@ -67,16 +67,16 @@ $("#comments").append("<%= escape_javascript render(@comment) %>");
 
 // rendering a single bit of text from a record's attribute
 $("#post-title").html("<%= escape_javascript @post.title) %>");
-```
+{% endhighlight %}
 
 Not _every_ situation requires `escape_javascript`, e.g.
 
-```
+{% highlight js %}
 // Not required here
 if (<%= @record.valid? %>) {
   // ...
 }
-```
+{% endhighlight %}
 
 however you'll find yourself getting into trouble more often by
 forgetting to escape as opposed to escaping unnecessarily.
@@ -87,12 +87,12 @@ You may have seen `j` being used in some code samples.
 
 The `j` method is nothing more than an alias for `escape_javascript`. It's a shortcut to save space and make the code more readable.
 
-```
+{% highlight js %}
 // This...
 $("#comments").html("<%= j render(@comments) %>");
 // is equivalent to...
 $("#comments").html("<%= escape_javascript render(@comments) %>");
-```
+{% endhighlight %}
 
 ## Now you know
 
