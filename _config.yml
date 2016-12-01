@@ -33,6 +33,15 @@ markdown: kramdown
 theme: minima
 permalink: none
 
+# Site-wide defaults
+defaults:
+  -
+    scope:
+      path: "" # all files
+      type: "posts"
+    values:
+      related_posts: true # always show 'related posts' by default
+
 # Environment-specific variables
 # NOTE: override these in a custom config file and serve using --config flag
 production_analytics_key: HovqibZYJPv9ZOev8ENoUNDDvjh2ZVpK

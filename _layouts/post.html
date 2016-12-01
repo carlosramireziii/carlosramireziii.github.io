@@ -10,10 +10,16 @@ layout: default
 
   <div class="post-content" itemprop="articleBody">
     {{ content }}
-    {% include related_posts.html %}
+    {% if page.related_posts %}
+      {% include related_posts.html %}
+    {% endif %}
   </div>
 
-  {% include post_cta.html %}
+  {% if page.custom_cta %}
+    {% include {{page.custom_cta}} %}
+  {% else %}
+    {% include post_cta.html %}
+  {% endif %}
 
   {% if site.disqus.shortname %}
     {% include disqus_comments.html %}
