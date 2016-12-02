@@ -33,6 +33,10 @@ markdown: kramdown
 theme: minima
 permalink: none
 
+# Plugins
+gems:
+  - jekyll-sitemap
+
 # Site-wide defaults
 defaults:
   -
