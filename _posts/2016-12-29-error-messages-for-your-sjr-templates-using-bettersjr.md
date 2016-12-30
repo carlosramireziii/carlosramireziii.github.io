@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Error Messages For Your SJR Templates Using BetterSJR
+tags: sjr
 ---
 
 ### Why does debugging SJR templates have to be so hard?
