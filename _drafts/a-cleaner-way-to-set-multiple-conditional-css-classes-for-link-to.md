@@ -3,6 +3,8 @@ layout: post
 title: A Cleaner Way To Set Multiple Conditional CSS Classes for 'link_to' 
 ---
 
+## The commonly accepted practices are not good
+
 Isn't it frustrating that there are _no_ elegant ways to conditionally append CSS class names to the `:class` option of a `link_to` helper call?
 
 The code to do the conditionals clutters up the views, especially when there's more than one.
@@ -12,7 +14,7 @@ They all look messy and require logic in the view layer.
 
 For such a common task, why isn't there a better solution?
 
-## Taking inspiration from `React`
+## Finding inspiration in `React`
 
 Facebook's `React` front-end framework has an add-on called `classNames` (formerly known as `classSet`) which offers a solution to this problem.
 
@@ -25,7 +27,7 @@ classNames({ nav: true, active: false, hidden: someTruthyVar })
 
 Wouldn't it be nice to have a similar method in Rails?
 
-## A solution for Rails
+## Here is a better solution for Rails
 
 The [`css-class-string`](https://github.com/nLight/css-class-string) gem provides just such a helper for our Rails views. 
 
@@ -66,7 +68,7 @@ def class_string(css_map)
 end
 {% endhighlight %}
 
-Or if you prefer one-liners
+Or if you prefer one-liners:
 
 {% highlight ruby %}
 def class_string(css_map)
