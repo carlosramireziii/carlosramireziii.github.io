@@ -58,7 +58,7 @@ however if you don't want to add another gem to your `Gemfile` then you can crea
 def class_string(css_map)
   class_string = ""
 
-  css_hash.each do |css, bool|
+  css_map.each do |css, bool|
     class_string << css if bool
   end
   
@@ -69,7 +69,7 @@ end
 Or if you prefer one-liners
 
 {% highlight ruby %}
-def class_string(css_to_boolean_map)
-  css_to_boolean_map.find_all(&:last).map(&:first).join(" ")
+def class_string(css_map)
+  css_map.find_all(&:last).map(&:first).join(" ")
 end
 {% endhighlight %}
