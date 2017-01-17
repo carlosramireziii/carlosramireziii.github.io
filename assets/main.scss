@@ -36,6 +36,11 @@ input[type="submit"] {
   padding-right: 12px;
 }
 
+pre {
+  // Wrap code snippets
+  white-space: pre-wrap;
+}
+
 // Layout styling
 
 .site-footer {
