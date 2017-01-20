@@ -60,13 +60,13 @@ however if you don't want to add another gem to your `Gemfile` then you can crea
 # @param css_map [Hash] a mapping of CSS class names to boolean values
 # @return [String] a combined string of CSS classes where the value was true
 def class_string(css_map)
-  class_string = ""
+  classes = []
 
   css_map.each do |css, bool|
-    class_string << css if bool
+    classes << css if bool
   end
   
-  class_string
+  classes.join(" ")
 end
 {% endhighlight %}
 
