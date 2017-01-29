@@ -160,7 +160,7 @@ The following outline can serve as your new step-by-step process to use whenever
 1. Re-introduce ERB rendering calls and look for Ruby errors
 1. Make sure every ERB render call is escaped properly
 
-To download a PDF cheatsheet to use as a reference, just [drop your email below](#post-cta).
+To download a PDF cheatsheet to use as a reference, just [drop your email below](#post_cta).
 
 [sjr_errors_post]: {{ site.baseurl }}{% post_url 2016-11-20-3-reasons-why-your-sjr-template-isnt-working %}
 [instance_var_in_partials_post]: {{ site.baseurl }}{% post_url 2016-09-19-stop-using-instance-variables-in-partials %}

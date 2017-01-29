@@ -131,6 +131,6 @@ The steps above are for a basic Rails 5 API application with no other gems or fr
 Your own app may include dependencies which rely on additional middleware or other configuration to get Active Admin working.
 If so, post in the comments below.
 
-Also, make sure you [subscribe below](#) to receive upcoming guides that will cover **Rails Admin** and **Administrate**.
+Also, make sure you [subscribe below](#post_cta) to receive upcoming guides that will cover **Rails Admin** and **Administrate**.
 
 *[AA]: Active Admin
