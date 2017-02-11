@@ -16,6 +16,8 @@ $primary-color-dark:  #0D47A1;
 $accent-color:        #FF5252;
 $divider-color:       rgba(0, 0, 0, 0.12);
 
+$table-cell-padding: 5px;
+
 // Base styling
 
 body {
@@ -102,4 +104,21 @@ pre {
 .signature {
   font-family: "Handlee", serif;
   font-size: 1.8rem;
+}
+
+.table {
+  width: 100%;
+
+  td {
+    padding: $table-cell-padding*2;
+    text-align: center;
+  }
+
+  th { 
+    padding: $table-cell-padding; 
+  }
+
+  thead {
+    background-color: $divider-color;
+  }
 }
