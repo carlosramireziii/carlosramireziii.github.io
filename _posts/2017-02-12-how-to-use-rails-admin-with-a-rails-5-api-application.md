@@ -26,9 +26,9 @@ There are plenty of other admin frameworks besides Active Admin and Rails Admin.
 To see which ones are compatible with Rails 5 API apps,
 I have created a handy chart for you to reference. 
 
-[Rails 5 API-mode Admin Framework Compatibility Chart](compatibility_chart)
+[Rails 5 API-mode Admin Framework Compatibility Chart][compatibility_chart]
 
 [previous_post]: {{ site.baseurl }}{% post_url 2017-01-29-how-to-add-active-admin-to-a-rails-5-api-application %}
 [changelog]: https://github.com/sferik/rails_admin/blob/master/CHANGELOG.md#100---2016-09-19
 [commit]: https://github.com/sferik/rails_admin/commit/53eef4fe2ec0953381f4e3197c885adc0423dd49
-[compatibility_chart]: www.google.com
+[compatibility_chart]: {{ site.baseurl }}{% post_url 2017-02-12-rails-5-api-mode-admin-framework-compatibility-chart %}

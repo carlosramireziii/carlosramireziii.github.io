@@ -18,5 +18,5 @@ title: Rails 5 API-mode Admin Framework Compatibility Chart
 [rails_admin]: https://github.com/sferik/rails_admin
 [administrate]: https://github.com/thoughtbot/administrate
 [typus]: https://github.com/typus/typus
-[active_admin_post]: www.google.com
-[rails_admin_post]: www.google.com
+[active_admin_post]: {{ site.baseurl }}{% post_url 2017-01-29-how-to-add-active-admin-to-a-rails-5-api-application %}
+[rails_admin_post]: {{ site.baseurl }}{% post_url 2017-02-12-how-to-use-rails-admin-with-a-rails-5-api-application %}
