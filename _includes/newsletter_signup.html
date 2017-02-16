@@ -1,11 +1,7 @@
 {% assign newsletter_config_key = jekyll.environment | append: "_newsletter_key" %}
 {% assign newsletter_key = site[newsletter_config_key] %}
 
-<form action="//carlosramireziii.us13.list-manage.com/subscribe/post?u=fd5cccfb8d1f53505e22eb917&amp;id={{ newsletter_key }}" method="post">
-  <input type="text" name="EMAIL">
-
-  <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-  <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_fd5cccfb8d1f53505e22eb917_{{ newsletter_key }}" tabindex="-1" value=""></div>
-
-  <input type="submit" value="Teach Me" name="subscribe">
+<form action="https://www.getdrip.com/forms/{{ newsletter_key }}/submissions" method="post" data-drip-embedded-form="{{ newsletter_key }}">
+  <input type="email" name="fields[email]" value="" />
+  <input type="submit" name="submit" value="Teach Me" data-drip-attribute="sign-up-button" />
 </form>
