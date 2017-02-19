@@ -2,6 +2,7 @@
 layout: post
 title: Rails 5 API-mode Admin Framework Compatibility Chart
 updated_date: 2017-02-12
+custom_cta: ctas/admin_framework_compatibility_chart.html
 ---
 
 |---
