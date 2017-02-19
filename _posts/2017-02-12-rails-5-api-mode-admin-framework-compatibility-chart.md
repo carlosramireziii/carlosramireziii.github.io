@@ -1,7 +1,8 @@
 ---
 layout: post
 title: Rails 5 API-mode Admin Framework Compatibility Chart
-updated_date: 2017-02-12
+updated_date: 2017-02-19
+custom_cta: ctas/admin_framework_compatibility_chart.html
 ---
 
 |---
@@ -9,7 +10,7 @@ updated_date: 2017-02-12
 |---
 | [Active Admin][active_admin] | &#10007; | [Read More][active_admin_post]
 | [Rails Admin][rails_admin] | &#10003; | [Read More][rails_admin_post] 
-| [Administrate][administrate] | &#10007; | 
+| [Administrate][administrate] | &#10007; | [Read More][administrate_post]
 | [Typus][typus] | &#10007; |
 {: .table}
 
@@ -21,3 +22,4 @@ updated_date: 2017-02-12
 [typus]: https://github.com/typus/typus
 [active_admin_post]: {{ site.baseurl }}{% post_url 2017-01-29-how-to-add-active-admin-to-a-rails-5-api-application %}
 [rails_admin_post]: {{ site.baseurl }}{% post_url 2017-02-12-how-to-use-rails-admin-with-a-rails-5-api-application %}
+[administrate_post]: {{ site.baseurl }}{% post_url 2017-02-19-using-administrate-with-a-rails-5-api-application %}
