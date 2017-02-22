@@ -1,7 +1,0 @@
-{% assign newsletter_config_key = jekyll.environment | append: "_newsletter_key" %}
-{% assign newsletter_key = site[newsletter_config_key] %}
-
-<form action="https://www.getdrip.com/forms/{{ newsletter_key }}/submissions" method="post" data-drip-embedded-form="{{ newsletter_key }}">
-  <input type="email" name="fields[email]" value="" />
-  <input type="submit" name="submit" value="{{ include.cta | default: 'Teach Me' }}" data-drip-attribute="sign-up-button" />
-</form>

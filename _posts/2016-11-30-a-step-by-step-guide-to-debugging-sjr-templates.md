@@ -2,7 +2,7 @@
 layout: post
 title: "A Step-By-Step Guide to Debugging SJR Templates"
 tags: sjr
-custom_cta: ctas/debug_sjr_guide_cta.html
+form_id: 52645556
 related_posts: false
 ---
 

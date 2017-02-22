@@ -1,13 +1,5 @@
-<section class="page-cta">
-
-  <h2>The Internet is dark and full of terrors. Let me illuminate it for you</h2>
-
-  <p>There is so much out there to learn from, but information overload runs
-  rampant.</p>
-
-  <p>Sign up for my newsletter, and I'll send you the best, beginner-friendly
-  resources I can find for budding programmers and entrepreneurs.</p>
-
-  {% include newsletter_signup.html %}
-
-</section>
+{% if page.form_id %}
+  <section id="page_cta" class="page-cta">
+    {% include signup_form.html form_id=page.form_id %} 
+  </section>
+{% endif %}
