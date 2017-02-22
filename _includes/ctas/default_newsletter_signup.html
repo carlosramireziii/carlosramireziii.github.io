@@ -1,0 +1,18 @@
+{% assign form_id = page.form_id | default: "303844" %}
+
+<section id="post_cta" class="post-cta">
+
+  <form action="https://www.getdrip.com/forms/{{ form_id }}/submissions" method="post" data-drip-embedded-form="{{ form_id }}">
+
+  <h2 data-drip-attribute="headline">Want to take your Rails game to the next level?</h2>
+
+  <p data-drip-attribute="description">Are you ready to go beyond building basic CRUD applications? Have you mastered MVC and want to learn the techniques that senior developers use?
+  <br />
+  <br />
+  Put your email below and start your journey toward becoming a Rails expert.</p>
+
+    <input type="email" name="fields[email]" value="" />
+    <input type="submit" name="submit" value="Teach Me" data-drip-attribute="sign-up-button" />
+  </form>
+
+</section>
