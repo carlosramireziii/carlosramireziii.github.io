@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Administrate Is Not Dead
+form_id: 72544570
 ---
 
 ## The existing admin gems just aren't cutting it
