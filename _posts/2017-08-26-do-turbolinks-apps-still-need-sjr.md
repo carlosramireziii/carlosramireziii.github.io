@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Do Turbolinks apps still need SJR?
+title: Do Turbolinks Apps Still Need SJR?
 tags: sjr
 ---
 
