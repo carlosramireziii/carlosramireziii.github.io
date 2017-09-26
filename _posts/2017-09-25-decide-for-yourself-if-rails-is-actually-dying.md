@@ -119,5 +119,5 @@ subscribe below so you [don't miss my next article](#post_cta).
 I will be compiling a list of the most compelling rebuttals to the Rails-is-dead argument I have found on the web._
 
 _If you're excited and confident about continuing to use Rails, 
-[you should also subscribe](#post-cta). 
+[you should also subscribe](#post_cta). 
 I'll be writing about the joys of building full-featured web apps for clients and side-projects using Ruby on Rails._
