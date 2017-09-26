@@ -118,12 +118,19 @@ module MyApp
     # add these =>
     config.middleware.use ActionDispatch::Cookies
     config.middleware.use ActionDispatch::Session::CookieStore
-    config.middleware.use Rack::MethodOverride
   end
 end
 {% endhighlight %}
 
 Congratulations, you can now successfully sign in and access your Active Admin dashboard!
+
+### UPDATE: `Rack::MethodOverride`
+
+If you see the following error, try adding `Rack::MethodOverride` to the list of middleware. 
+
+> `No route matches [POST] for delete and update`
+
+Thanks to the commenters below who reported this!
 
 ## Your setup may require more config
 
