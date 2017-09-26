@@ -99,7 +99,7 @@ A common complaint about Rails is that large monoliths are hard to scale and mai
 
 ## Claim #5 - Rails jobs are declining
 
-Job growth rates according to Indeed.com show Ruby/Rails on the decline. 
+Job growth rates according to Indeed show Ruby/Rails on the decline. 
 
 ### Questions to consider: 
 
