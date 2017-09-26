@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Decide For Yourself If Rails Is Actually Dying
-form_id: 21177791
+form_id: 3038544
 ---
 
 **You don't have to look hard to find some article, Tweet, or comment proclaiming that Ruby on Rails is "dead".**
