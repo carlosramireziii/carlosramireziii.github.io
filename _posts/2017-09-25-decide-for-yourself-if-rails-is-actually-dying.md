@@ -84,7 +84,7 @@ instances of development bootcamps dropping Ruby/Rails are being used to make th
 ### Questions to consider:
 
 * Do you face the same kinds of issues that these large companies do? Are you trying to solve the same class of problems? 
-* What about companies that have stayed with Rails (e.g. GitHub, Airbnb, Groupon, and others)?
+* What about companies that have stayed with Rails (e.g. Shopify, GitHub, Airbnb, Groupon, and [many][ror-sites-1]{:target="\_blank"} [others][ror-sites-2]{:target="\_blank"})?
 * How do bootcamps build their curriculums? Do trendy languages sell more seats than established ones? 
 
 ## Claim #4 - Rails is hard to maintain
@@ -121,3 +121,6 @@ I will be compiling a list of the most compelling rebuttals to the Rails-is-dead
 _If you're excited and confident about continuing to use Rails, 
 [you should also subscribe](#post_cta). 
 I'll be writing about the joys of building full-featured web apps for clients and side-projects using Ruby on Rails._
+
+[ror-sites-1]: https://skillcrush.com/2015/02/02/37-rails-sites
+[ror-sites-2]: http://designwebkit.com/inspiration/40-websites-built-with-ruby-on-rails
