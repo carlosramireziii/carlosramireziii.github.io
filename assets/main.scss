@@ -43,6 +43,12 @@ pre {
   white-space: pre-wrap;
 }
 
+blockquote {
+  border-left: 1px solid;
+  padding-left: 1rem;
+  font-style: italic;
+}
+
 // Layout styling
 
 .site-footer {
