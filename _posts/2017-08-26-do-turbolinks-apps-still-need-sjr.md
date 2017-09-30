@@ -17,13 +17,13 @@ Turbolinks is built to handle `GET` requests only;
 it doesn't handle XHR `POST` requests,
 which is exactly where SJR shines.
 
-According to [the Turbolinks maintainer](https://github.com/turbolinks/turbolinks/issues/119#issuecomment-227221738){:target="\_blank"}:
+According to [the Turbolinks maintainer](https://github.com/turbolinks/turbolinks/issues/119#issuecomment-227221738){:target="_blank"}:
 
 > Turbolinks doesn't handle XHR form submission. If you want to update the page in response to an XHR, you can return a JavaScript string and evaluate it. Since you're using Rails with jQuery, the JavaScript response will be evaluated automatically.
 > 
 > This technique is known generally as "Server-generated JavaScript Responses" or SJR for short.
 
-and [DHH](https://github.com/rails/rails/issues/25197#issue-157523625){:target="\_blank"}:
+and [DHH](https://github.com/rails/rails/issues/25197#issue-157523625){:target="_blank"}:
 
 > When using Turbolinks, a normal redirect will generate a Turbolinks.visit() call, and otherwise there's SJR.
 

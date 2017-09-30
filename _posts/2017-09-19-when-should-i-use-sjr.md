@@ -5,11 +5,11 @@ tags: sjr
 related_posts: false
 ---
 
-Rails encourages you to submit forms using AJAX by making it the new [default option][DHH form_with proposal]{:target="\_blank"}.
+Rails encourages you to submit forms using AJAX by making it the new [default option][DHH form_with proposal]{:target="_blank"}.
 It does this by setting `remote: true` on forms created with the `form_with` helper.
 
-This means SJR is about to get [a lot more popular][Why Isn't SJR More Popular?]{:target="\_blank"}, 
-[even in Turblinks-enabled apps][SJR with Turbolinks?]{:target="\_blank"}.
+This means SJR is about to get [a lot more popular][Why Isn't SJR More Popular?]{:target="_blank"}, 
+[even in Turblinks-enabled apps][SJR with Turbolinks?]{:target="_blank"}.
 
 With that in mind, 
 let's review some common use cases for SJR in a Rails app. 
@@ -50,7 +50,7 @@ This technique does result in more requests hitting the server, so use caution.
 
 Turbolinks and a splash of SJR can give your app the feel of an SPA without the overhead of a front-end framework. 
 
-_Brush up on your [SJR template debugging skills][Debugging SJR]{:target="\_blank"}, and_
+_Brush up on your [SJR template debugging skills][Debugging SJR]{:target="_blank"}, and_
 _[subscribe to my list](#post_cta) more articles on SJR and Rails._
 
 [DHH form_with proposal]: https://github.com/rails/rails/issues/25197
