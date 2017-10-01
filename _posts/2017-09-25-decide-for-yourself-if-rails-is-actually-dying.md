@@ -114,13 +114,13 @@ Draw your own conclusions about whether the claims that Rails is dead are valid.
 
 ---
 
-_If you're still unsure about the future of Ruby on Rails, 
-subscribe below so you [don't miss my next article](#post_cta).
-I will be compiling a list of the most compelling rebuttals to the Rails-is-dead argument I have found on the web._
+_Need more reassurance? 
+Here is [a list of the best articles explaining why Rails is still worth doing][Rails Is Worthwhile List] in 2017 and beyond._
 
-_If you're excited and confident about continuing to use Rails, 
-[you should also subscribe](#post_cta). 
-I'll be writing about the joys of building full-featured web apps for clients and side-projects using Ruby on Rails._
+_If you're excited and confident about using Rails, 
+[subscribe to my Rails developers list](#post_cta).
+I'll be sharing content about the joys of building full-featured web apps for clients and side-projects using Ruby on Rails._
 
 [ror-sites-1]: https://skillcrush.com/2015/02/02/37-rails-sites
 [ror-sites-2]: http://designwebkit.com/inspiration/40-websites-built-with-ruby-on-rails
+[Rails Is Worthwhile List]: {{ site.baseurl }}{% post_url 2017-09-30-6-articles-explaining-why-ruby-on-rails-is-still-worthwhile %}
