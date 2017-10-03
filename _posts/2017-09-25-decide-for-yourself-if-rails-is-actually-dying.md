@@ -84,7 +84,7 @@ instances of development bootcamps dropping Ruby/Rails are being used to make th
 ### Questions to consider:
 
 * Do you face the same kinds of issues that these large companies do? Are you trying to solve the same class of problems? 
-* What about companies that have stayed with Rails (e.g. Shopify, GitHub, Airbnb, Groupon, and [many][ror-sites-1]{:target="_blank"} [others][ror-sites-2]{:target="_blank"})?
+* What about companies that have stayed with Rails (e.g. Shopify, GitHub, Airbnb, and [many][ror-sites-1]{:target="_blank"} [others][ror-sites-2]{:target="_blank"})?
 * How do bootcamps build their curriculums? Do trendy languages sell more seats than established ones? 
 
 ## Claim #4 - Rails is hard to maintain
