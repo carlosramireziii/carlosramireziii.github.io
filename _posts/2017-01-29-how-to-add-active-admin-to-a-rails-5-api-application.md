@@ -139,6 +139,14 @@ The steps above are for a basic Rails 5 API application with no other gems or fr
 Your own app may include dependencies which rely on additional middleware or other configuration to get Active Admin working.
 If so, post in the comments below.
 
-Also, make sure you [subscribe below](#post_cta) to receive upcoming guides that will cover **Rails Admin** and **Administrate**.
+---
 
+_Did you know that [Administrate][Administrate With API] and [Rails Admin][Rails Admin With API] can also be used with Rails 5 API apps?_
+
+_Use this [compatibility chart][Compatibility Chart] to learn which popular admin frameworks you can use with Rails 5 API mode._
+
+[Administrate With API]: {{ site.baseurl }}{% post_url 2017-02-19-using-administrate-with-a-rails-5-api-application %}
+[Rails Admin With API]: {{ site.baseurl }}{% post_url 2017-02-12-how-to-use-rails-admin-with-a-rails-5-api-application %}
+[Compatibility Chart]: {{ site.baseurl }}{% post_url 2017-02-12-rails-5-api-mode-admin-framework-compatibility-chart %}
 *[AA]: Active Admin
+

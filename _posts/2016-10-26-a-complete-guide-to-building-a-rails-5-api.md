@@ -28,3 +28,14 @@ The topics covered are:
 By the end of the tutorial you'll have a fully-functioning API ready to
 be consumed by a client-side JS framework, native mobile app, or
 other integration. Check it out!
+
+---
+
+_Want to add an admin dashboard to your API app?_
+
+_Most admin gems don't work out-of-the-box with Rails 5 API mode,_
+_but with a little extra setup we can get them running._
+
+_[Click here][Compatibility Chart] to see how._
+
+[Compatibility Chart]: {{ site.baseurl }}{% post_url 2017-02-12-rails-5-api-mode-admin-framework-compatibility-chart %}
