@@ -76,5 +76,7 @@ Creating variants is a pleasure.
 No migrations = less work.
 Direct uploads with a single line of code... yes please! 
 
-My only gripe is that it’s still missing attachment and content-type validations.
+My only gripe is that it’s still missing [attachment][Attachment validator] and content-type validations.
 Even so, I highly recommend giving Active Storage a try in your next project.
+
+[Attachment validator]: {{ site.baseurl }}{% post_url 2018-09-03-adding-an-attachment-validator-to-active-storage %}

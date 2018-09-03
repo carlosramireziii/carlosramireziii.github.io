@@ -16,7 +16,7 @@ Model validation, of course, is one of the fundamental features of Rails.
 It's also one of the things that made me fall in love with Rails in the early days. 
 That's why it's surprising that Active Storage was released without it, 
 especially since it's a feature of the other file upload gems. 
-It's become one of the [top feature requests on the Rails repository][Rails validation issue],
+It's become one of the [top feature requests on the Rails repository][Rails validation issue]{:target="_blank"},
 and many feel it's a major feature lapse. 
 
 That said, it's pretty easy to add a custom validator to gain this missing functionality. 
@@ -70,5 +70,5 @@ but we can build one ourselves.
 
 _Subscribe to my list [below](#post_cta) to be notified when the next Active Storage validator article is released._
 
-[My Favorite Active Storage Features][]
+[My Favorite Active Storage Features]: {{ site.baseurl }}{% post_url 2018-08-27-my-favorite-active-storage-features %}
 [Rails validation issue]: https://github.com/rails/rails/issues/31656
