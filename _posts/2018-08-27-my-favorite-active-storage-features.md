@@ -20,7 +20,7 @@ To help you decide, here are a few of my favorite features of the newest additio
 Active Storage has made doing image transforms simple and flexible. 
 
 Want a thumbnail image? 
-No problem. 
+Easy.
 
 Need to dynamically resize and crop a photo? 
 Done and done. 
@@ -32,14 +32,14 @@ That last one was the most impressive for me.
 I am finally able to solve the age-old issue of user uploaded images having inconsistent sizes and not lining up in my grid layouts. 
 
 All it takes is a few simple options in the `variant` method. 
-In fact, the full power of MiniMagick is available to you, which can be a bit overwhelming at first. 
+In fact, the full power of MiniMagick is available to you (which can be a bit overwhelming at first). 
 
 Rails creates these image variants on-the-fly.
 This means you can change your thumbnail images from 75px to 100px without having to run a script to re-process all your existing images.
 This is handy when you are fast prototyping and aren’t quite sure what your image size requirements are yet. 
 
 Rails even caches the variants so that processing only happens the first time it’s generated.
-This means decent performance out of the gate.
+You won't have to worry about performance.
 
 ## No database migrations needed!
 
@@ -58,10 +58,10 @@ Want to upload files from the client directly to a cloud provider?
 Active Storage comes with built-in direct upload functionality. 
 
 Enabling this functionality is as simple as including the JS file and setting `direct_upload: true` on the file input.
-In true Rails fashion, it Just Works (TM).
+In true Rails fashion, it Just Works &trade;
 
 Rails even provides a set of JavaScript events to hook into.
-You can use them to customize the user experience: add a progress bar, integrate a front-end plugin, etc.
+You can use them to customize the user experience, e.g. adding a progress bar, integrating a front-end plugin, etc.
 
 ## Go ahead and try it in your next project
 
@@ -71,10 +71,11 @@ I have been using Active Storage in client work and side projects for almost a y
 I was initially skeptical about how Rails would improve on existing file upload gems.
 It turns out, they knocked it out of the park!
 
-Active Storage is so simple to use.
+Active Storage is so easy to use.
 Creating variants is a pleasure.
 No migrations = less work.
 Direct uploads with a single line of code... yes please! 
+Plus, I always prefer to use built-in Rails functionality because I know it will be well-integrated with the rest of the framework
 
 My only gripe is that it’s still missing [attachment][Attachment validator] and content-type validations.
 Even so, I highly recommend giving Active Storage a try in your next project.
