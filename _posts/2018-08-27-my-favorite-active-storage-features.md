@@ -1,6 +1,6 @@
 ---
 layout: post
-title: My Favorite Active Storage Features
+title: The Best Features of Active Storage
 ---
 
 The headlining feature of Rails 5.2 is a built-in file upload solution called Active Storage.
