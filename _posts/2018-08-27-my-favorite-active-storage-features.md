@@ -77,7 +77,7 @@ No migrations = less work.
 Direct uploads with a single line of code... yes please! 
 Plus, I always prefer to use built-in Rails functionality because I know it will be well-integrated with the rest of the framework
 
-My only gripe is that it’s still missing [attachment][Attachment validator] and content-type validations.
+My only gripe is that it’s still missing an [attachment presence validator][Attachment validator] and a content-type validator.
 Even so, I highly recommend giving Active Storage a try in your next project.
 
 [Attachment validator]: {{ site.baseurl }}{% post_url 2018-09-03-adding-an-attachment-validator-to-active-storage %}
