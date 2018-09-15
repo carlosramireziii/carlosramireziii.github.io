@@ -64,12 +64,9 @@ You'll usually want to restrict the file types that you allow the user to upload
 For example, images should only be PNG, GIF, or JPEG. Another example is that documents should only be PDF or TXT. 
 
 Active Storage does not have a built-in content-type validation, 
-but we can build one ourselves.  
-I'll show you how in my next post.
+but we can [build one ourselves][Active Storage content-type validator post].
 
----
-
-_Subscribe to my list [below](#post_cta) so I can let you know when my Active Storage content-type validator article is released._
 
 [My Favorite Active Storage Features]: {{ site.baseurl }}{% post_url 2018-08-27-my-favorite-active-storage-features %}
 [Rails validation issue]: https://github.com/rails/rails/issues/31656
+[Active Storage content-type validator post]: {{ site.baseurl }}{% post_url 2018-09-15-validating-the-content-type-of-active-storage-attachments %}
