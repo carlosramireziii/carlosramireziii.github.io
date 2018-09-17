@@ -53,8 +53,8 @@ You'll find the code for the matcher [here](https://gist.github.com/carlosramire
 
 ## What other validators are missing from Active Storage?
 
-So far the main validations I've missed from Active Storage are presence and content-type.
-Which ones do you need for your work? 
+So far the main validations I've missed from Active Storage are for presence and content-type.
+Which ones do you wish you had for your own work?
 
 Share your thoughts in the comments below!
 
@@ -62,14 +62,15 @@ Share your thoughts in the comments below!
 
 _One of my favorite features of Active Storage is the `variant` method._
 _Not only is it super easy to use, but it's also very powerful._
-_You can create image transformations using any option that's supported by MiniMagick._
+_You can create image transformations using any option that's supported by ImageMagick._
 
 _Unfortunately, I've found the documentation for these options isn't that accessible..._
 
-_In my next set of posts I'll be sharing the most useful options that I've found while using Active Storage variants._
-_You'll learn how to fix upside down images, make images with different aspect ratios consistent, and more._
+_In my next post I'll be discussing how options are passed to the `variant` method._
+_I'll share the best online resources and documentation to take the mystery out of what transformations are possible and how to achieve them._
+_You'll also learn how to fix upside down images, how to deal with images with different aspect ratios, and more._
 
-_The only way to make sure you don't miss those is to [subscribe below](#post_cta)._
+_The only way to make sure you don't miss it is to [subscribe below](#post_cta)._
 
 [attachment validator post]: {{ site.baseurl }}{% post_url 2018-09-03-adding-an-attachment-validator-to-active-storage %}
 [favorite Active Storage features post]: {{ site.baseurl }}{% post_url 2018-08-27-my-favorite-active-storage-features %}
