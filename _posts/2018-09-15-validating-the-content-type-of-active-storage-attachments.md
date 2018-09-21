@@ -66,13 +66,14 @@ _You can create image transformations using any option that's supported by Image
 
 _Unfortunately, I've found the documentation for these options isn't that accessible..._
 
-_In my next post I'll be discussing how options are passed to the `variant` method._
+_In my next post I'll be discussing [how options are passed to the `variant` method][Active Storage variant post]._
 _I'll share the best online resources and documentation to take the mystery out of what transformations are possible and how to achieve them._
 _You'll also learn how to fix upside down images, how to deal with images with different aspect ratios, and more._
 
-_The only way to make sure you don't miss it is to [subscribe below](#post_cta)._
+**Read it here**: _[What Options Can Be Passed to the Active Storage `variant` Method?][Active Storage variant post]_
 
 [attachment validator post]: {{ site.baseurl }}{% post_url 2018-09-03-adding-an-attachment-validator-to-active-storage %}
 [favorite Active Storage features post]: {{ site.baseurl }}{% post_url 2018-08-27-my-favorite-active-storage-features %}
+[Active Storage variant post]: {{ site.baseurl }}{% post_url 2018-09-20-what-options-can-be-passed-to-the-active-storage-variant-method %}
 [Rails validation issue]: https://github.com/rails/rails/issues/31656
 [Rails validation PR]: https://github.com/rails/rails/pull/33303

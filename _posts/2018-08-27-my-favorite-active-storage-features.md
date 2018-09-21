@@ -32,7 +32,7 @@ That last one was the most impressive for me.
 I am finally able to solve the age-old issue of user uploaded images having inconsistent sizes and not lining up in my grid layouts. 
 
 All it takes is a few simple options in the `variant` method. 
-In fact, the full power of MiniMagick is available to you (which can be a bit overwhelming at first). 
+In fact, the full power of MiniMagick is available to you ([which can be a bit overwhelming at first][Active Storage variant post]).
 
 Rails creates these image variants on-the-fly.
 This means you can change your thumbnail images from 75px to 100px without having to run a script to re-process all your existing images.
@@ -82,3 +82,4 @@ Even so, I highly recommend giving Active Storage a try in your next project.
 
 [Attachment validator]: {{ site.baseurl }}{% post_url 2018-09-03-adding-an-attachment-validator-to-active-storage %}
 [Content-type validator]: {{ site.baseurl }}{% post_url 2018-09-15-validating-the-content-type-of-active-storage-attachments %}
+[Active Storage variant post]: {{ site.baseurl }}{% post_url 2018-09-20-what-options-can-be-passed-to-the-active-storage-variant-method %}
